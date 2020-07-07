@@ -38,6 +38,7 @@ h1{
   margin-right: 50px;
 }
 .shopping-list{
+  
   width: 700px;
   height: 250px;
   text-align: center;
@@ -58,6 +59,9 @@ h1{
   border: 5px dashed #d9d9d9;
   border-radius: 10px;
   padding: 5rem 2rem;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
   background-color: rgba(49, 209, 9, 0.137);
 }
 .phone{
@@ -65,6 +69,7 @@ h1{
   width: 10rem !important;
   margin: 0 1em 1em 0.25em !important;
   padding: .5em !important;
+  
   cursor: pointer;
   background: #f7f7f7 !important;
   
@@ -84,4 +89,42 @@ h1{
 }
 .meta{
   font-size: 8px !important;
+}
+
+/* Drag and Drop */
+
+.drag{
+  background-color: lightblue !important;
+}
+
+/* My cart */
+.placeholder{
+  text-align: center;
+}
+
+/* Transition */
+.transPhones-appear {
+  opacity: 0.01;
+}
+
+.transPhones-appear.transPhones-appear-active {
+  opacity: 1;
+  transition: opacity .5s ease-in;
+}
+.transPhones-enter {
+  opacity: 0.01;
+}
+
+.transPhones-enter.transPhones-enter-active {
+  opacity: 1;
+  transition: opacity .5s ease-in;
+}
+
+.transPhones-leave {
+  opacity: 1;
+}
+
+.transPhones-leave.transPhones-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
 }
