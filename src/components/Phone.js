@@ -9,4 +9,4 @@ class Phone extends Component{
         )
     }
 }
-export default Phone
+export default Phone;
